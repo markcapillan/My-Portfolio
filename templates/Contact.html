@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact - Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f27f0d",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#221910",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #e5e7eb;
+            border-radius: 20px;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background-color: #374151;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#1c140d] dark:text-[#f4ede7] transition-colors duration-200">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-[#f4ede7] dark:border-[#3a2e25] bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-6 py-4 md:px-10 lg:px-40">
+  <div class="flex items-center gap-3 text-[#1c140d] dark:text-white">
+    <div class="size-8 flex items-center justify-center rounded-lg bg-primary/10 dark:bg-primary/20 text-primary">
+      <span class="material-symbols-outlined text-2xl">grid_view</span>
+    </div>
+    <h2 class="text-lg font-bold leading-tight tracking-tight">
+      Mark Christian Capillan
+    </h2>
+  </div>
+
+  <div class="hidden md:flex flex-1 justify-end gap-8 items-center">
+    <nav class="flex items-center gap-8">
+      <a class="text-sm font-medium hover:text-primary transition-colors" href="../index.html">Home</a>
+      <a class="text-sm font-medium hover:text-primary transition-colors" href="AboutMe.html">About</a>
+      <a class="text-sm font-medium hover:text-primary transition-colors" href="Projects.html">Projects</a>
+      <a class="text-sm font-medium text-primary" href="Contact.html">Contact</a>
+    </nav>
+
+  <a href="capillan_cv.pdf" download>
+    <button class="flex h-10 items-center justify-center rounded-lg bg-primary px-5 text-white shadow-sm hover:bg-opacity-90 transition-all font-bold text-sm">
+      Download Resume
+    </button>
+  </a>
+  </div>
+
+  <div class="md:hidden">
+    <button class="text-[#1c140d] dark:text-white">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+  </div>
+</header>
+
+<main class="flex-grow flex flex-col items-center justify-center min-h-[calc(100vh-80px)] py-12 px-6">
+<div class="w-full max-w-[1000px] grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
+<!-- Left Column: Context & Contact Info -->
+<div class="lg:col-span-5 flex flex-col justify-between h-full">
+<div>
+<div class="mb-10">
+<span class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-wider uppercase mb-4">Contact</span>
+<h1 class="text-4xl md:text-5xl font-black leading-tight tracking-tight mb-4">Let's Work Together</h1>
+<p class="text-[#9c7349] dark:text-[#a09080] text-lg font-normal leading-relaxed">
+                            Have a project in mind? We'd love to hear about it. Fill out the form or reach out directly via email or phone.
+                        </p>
+</div>
+<div class="space-y-6">
+<div class="flex items-start gap-4 p-4 rounded-xl bg-white dark:bg-[#2c2219] border border-[#e8dbce] dark:border-[#3a2d25] shadow-sm">
+<div class="p-2 bg-primary/10 rounded-lg text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">mail</span>
+</div>
+<div>
+<p class="text-sm text-[#9c7349] dark:text-[#a09080] font-medium mb-0.5">Chat to us</p>
+<a class="text-base font-semibold hover:text-primary transition-colors" href="mailto:markcapillan004@gmail.com">markcapillan004@gmail.com</a>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-xl bg-white dark:bg-[#2c2219] border border-[#e8dbce] dark:border-[#3a2d25] shadow-sm">
+<div class="p-2 bg-primary/10 rounded-lg text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">call</span>
+</div>
+<div>
+<p class="text-sm text-[#9c7349] dark:text-[#a09080] font-medium mb-0.5">Call us</p>
+<a class="text-base font-semibold hover:text-primary transition-colors" href="tel:+6395 3790 6251">+6395 3790 6251</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Social Links -->
+<div class="mt-12">
+<p class="text-sm font-semibold mb-4 text-[#9c7349] dark:text-[#a09080] uppercase tracking-wider">Follow me</p>
+<div class="flex gap-4">
+<a class="group flex items-center justify-center w-12 h-12 rounded-full bg-white dark:bg-[#2c2219] border border-[#e8dbce] dark:border-[#3a2d25] text-[#1c140d] dark:text-[#f4ede7] hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-sm" href="https://www.linkedin.com/in/mark-capillan-93bb63329/">
+<!-- Replaced data-icon with pseudo SVG for modern look in pure HTML without external font script issues for brands -->
+<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+</svg>
+</a>
+<a class="group flex items-center justify-center w-12 h-12 rounded-full bg-white dark:bg-[#2c2219] border border-[#e8dbce] dark:border-[#3a2d25] text-[#1c140d] dark:text-[#f4ede7] hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-sm" href="https://github.com/markcapillan">
+<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.419-1.305.763-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+</svg>
+</a>
+<a class="group flex items-center justify-center w-12 h-12 rounded-full bg-white dark:bg-[#2c2219] border border-[#e8dbce] dark:border-[#3a2d25] text-[#1c140d] dark:text-[#f4ede7] hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-sm" href="https://www.instagram.com/markfkdkwkq/">
+<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+</svg>
+</a>
+<a class="group flex items-center justify-center w-12 h-12 rounded-full bg-white dark:bg-[#2c2219] border border-[#e8dbce] dark:border-[#3a2d25] text-[#1c140d] dark:text-[#f4ede7] hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-sm" href="https://www.facebook.com/markchristian.capellan.5">
+<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+  <path d="M22.675 0h-21.35C.594 0 0 .593 0 1.325v21.351C0 23.406.594 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.794.715-1.794 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.406 24 22.676V1.325C24 .593 23.406 0 22.675 0z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Right Column: Contact Form -->
+<div class="lg:col-span-7">
+<form class="bg-white dark:bg-[#2c2219] rounded-2xl p-6 md:p-8 lg:p-10 shadow-lg border border-[#f0e6dd] dark:border-[#3a2d25]">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<!-- Name Field -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-[#1c140d] dark:text-[#f4ede7]" for="name">Your Name</label>
+<div class="relative">
+<input class="w-full h-12 px-4 rounded-lg bg-[#fcfaf8] dark:bg-[#221910] border border-[#e8dbce] dark:border-[#4a3b32] text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent placeholder-[#9c7349]/50 dark:placeholder-[#a09080]/50 transition-all" id="name" placeholder="Jane Doe" type="text"/>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-[#9c7349]/50 pointer-events-none">person</span>
+</div>
+</div>
+<!-- Email Field -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-[#1c140d] dark:text-[#f4ede7]" for="email">Email Address</label>
+<div class="relative">
+<input class="w-full h-12 px-4 rounded-lg bg-[#fcfaf8] dark:bg-[#221910] border border-[#e8dbce] dark:border-[#4a3b32] text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent placeholder-[#9c7349]/50 dark:placeholder-[#a09080]/50 transition-all" id="email" placeholder="jane@example.com" type="email"/>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-[#9c7349]/50 pointer-events-none">alternate_email</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<!-- Phone Field -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-[#1c140d] dark:text-[#f4ede7]" for="phone">Phone Number</label>
+<div class="relative">
+<input class="w-full h-12 px-4 rounded-lg bg-[#fcfaf8] dark:bg-[#221910] border border-[#e8dbce] dark:border-[#4a3b32] text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent placeholder-[#9c7349]/50 dark:placeholder-[#a09080]/50 transition-all" id="phone" placeholder="+6391 2345 6789" type="tel"/>
+</div>
+</div>
+<!-- Subject Field -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-[#1c140d] dark:text-[#f4ede7]" for="subject">Subject</label>
+<div class="relative">
+<div class="relative">
+<select class="w-full h-12 px-4 rounded-lg bg-[#fcfaf8] dark:bg-[#221910] border border-[#e8dbce] dark:border-[#4a3b32] text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent appearance-none transition-all cursor-pointer" id="subject">
+<option>Project Inquiry</option>
+<option>Collaboration</option>
+<option>Just saying hi</option>
+<option>Other</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-[#9c7349] pointer-events-none text-xl">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Message Field -->
+<div class="flex flex-col gap-2 mb-8">
+<label class="text-sm font-semibold text-[#1c140d] dark:text-[#f4ede7]" for="message">Message</label>
+<textarea class="w-full p-4 rounded-lg bg-[#fcfaf8] dark:bg-[#221910] border border-[#e8dbce] dark:border-[#4a3b32] text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent placeholder-[#9c7349]/50 dark:placeholder-[#a09080]/50 resize-y min-h-[120px] transition-all" id="message" placeholder="Tell me a bit about your project..." rows="5"></textarea>
+</div>
+<!-- Submit Button -->
+<button class="w-full h-14 bg-primary hover:bg-[#d66e0b] text-white text-base font-bold rounded-lg shadow-lg shadow-primary/20 hover:shadow-primary/40 transform active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2 group" type="submit">
+                        Send Message
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">send</span>
+</button>
+<p class="text-xs text-center text-[#9c7349]/70 dark:text-[#a09080]/70 mt-4">
+                        We respect your privacy. No spam, ever.
+                    </p>
+</form>
+</div>
+</div>
+</main>
+</body></html>

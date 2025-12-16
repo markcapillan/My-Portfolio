@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>My Portfolio Homepage</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f27f0d",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#221910",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#2d241b",
+                        "text-main-light": "#1c140d",
+                        "text-main-dark": "#ffffff",
+                        "text-sec-light": "#5c5550",
+                        "text-sec-dark": "#a09a95",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-main-light dark:text-text-main-dark font-display antialiased transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-gray-200 dark:border-gray-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex justify-center">
+<div class="layout-content-container flex w-full max-w-[1280px] flex-col px-4 sm:px-6 lg:px-8">
+<div class="flex h-16 items-center justify-between whitespace-nowrap py-3">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center rounded-lg bg-primary/10 p-2 text-primary">
+<span class="material-symbols-outlined !text-[24px]">design_services</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] text-text-main-light dark:text-text-main-dark">Mark Christian Capillan</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8 items-center">
+<nav class="flex items-center gap-9">
+<a class="text-sm font-medium leading-normal text-text-sec-light dark:text-text-sec-dark hover:text-primary dark:hover:text-primary transition-colors" href="/templates/AboutMe.html">About</a>
+<a class="text-sm font-medium leading-normal text-text-sec-light dark:text-text-sec-dark hover:text-primary dark:hover:text-primary transition-colors" href="/templates/Projects.html">Projects</a>
+<a class="text-sm font-medium leading-normal text-text-sec-light dark:text-text-sec-dark hover:text-primary dark:hover:text-primary transition-colors" href="/templates/Contact.html">Contact</a>
+</nav>
+
+<a href="/templates/Contact.html">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-primary hover:bg-orange-600 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]" href="templates/Contact.html">
+<span class="truncate">Let's Talk</span>
+</button>
+</a>
+
+</div>
+<div class="md:hidden">
+<button class="p-2 text-text-main-light dark:text-text-main-dark">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col">
+<!-- Hero Section -->
+<section class="flex flex-col justify-center py-12 md:py-24 lg:py-32">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex justify-center">
+<div class="layout-content-container flex w-full max-w-[1280px] flex-col px-4 sm:px-6 lg:px-8">
+<div class="@container">
+<div class="flex flex-col-reverse gap-12 lg:flex-row lg:items-center lg:gap-16">
+<!-- Text Content -->
+<div class="flex flex-1 flex-col gap-8 text-left lg:py-8">
+<div class="flex flex-col gap-4">
+<div class="inline-flex w-fit items-center gap-2 rounded-full border border-gray-200 dark:border-gray-700 bg-surface-light dark:bg-surface-dark px-3 py-1">
+<span class="h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-xs font-medium text-text-sec-light dark:text-text-sec-dark">Available for new projects</span>
+</div>
+<h1 class="text-4xl font-black leading-tight tracking-[-0.033em] text-text-main-light dark:text-text-main-dark sm:text-5xl md:text-6xl lg:leading-[1.1]">
+                                                Crafting Digital Experiences <span class="text-primary">that Matter.</span>
+</h1>
+<h2 class="max-w-xl text-lg font-normal leading-relaxed text-text-sec-light dark:text-text-sec-dark md:text-xl">
+                                                I am a 4th Year IT Student passionate about designing user-centric digital products that blend aesthetics with functionality.
+                                            </h2>
+</div>
+<div class="flex flex-wrap gap-4">
+<a href="/templates/Projects.html">
+<button class="flex h-12 min-w-[140px] cursor-pointer items-center justify-center gap-2 rounded-lg bg-primary px-6 text-base font-bold text-white transition-all hover:bg-orange-600 hover:scale-[1.02]">
+<span>See Selected Works</span>
+<span class="material-symbols-outlined !text-[20px]">arrow_downward</span>
+</button>
+</a>
+
+
+<a href="/templates/capillan_cv.pdf" download>
+<button class="flex h-12 min-w-[140px] cursor-pointer items-center justify-center gap-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-surface-light dark:bg-surface-dark px-6 text-base font-bold text-text-main-light dark:text-text-main-dark transition-all hover:bg-gray-50 dark:hover:bg-gray-800 hover:scale-[1.02]">
+<span>Download Resume</span>
+<span class="material-symbols-outlined !text-[20px]">download</span>
+</button>
+</a>
+</div>
+<!-- Stats -->
+<div class="mt-4 flex gap-8 border-t border-gray-200 dark:border-gray-800 pt-8">
+<div>
+<p class="text-3xl font-bold text-text-main-light dark:text-text-main-dark">To have</p>
+<p class="text-sm text-text-sec-light dark:text-text-sec-dark">Many Years of Experience</p>
+</div>
+<div>
+<p class="text-3xl font-bold text-text-main-light dark:text-text-main-dark">10+</p>
+<p class="text-sm text-text-sec-light dark:text-text-sec-dark">Projects Done</p>
+</div>
+<div>
+<p class="text-3xl font-bold text-text-main-light dark:text-text-main-dark">10+</p>
+<p class="text-sm text-text-sec-light dark:text-text-sec-dark">Happy Clients</p>
+</div>
+</div>
+</div>
+<!-- Hero Image -->
+<div class="flex-1 lg:h-auto">
+<div class="relative w-full aspect-square md:aspect-[4/3] lg:aspect-square overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800">
+<div class="absolute inset-0 bg-center bg-cover transition-transform duration-700 hover:scale-105" data-alt="Modern minimalist workspace setup with laptop and design sketches" style='background-image: url("/images/profile_pic.png");'>
+</div>
+<!-- Floating Badge -->
+<div class="absolute bottom-6 left-6 right-6 p-4 bg-white/90 dark:bg-black/80 backdrop-blur-sm rounded-xl border border-white/20 shadow-lg">
+<div class="flex items-center gap-4">
+<div class="flex -space-x-3">
+<img alt="Client 1" class="h-10 w-10 rounded-full border-2 border-white dark:border-gray-800 object-cover" data-alt="Portrait of a smiling woman" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAG7Zkn4IJ9rgI94xw89kr52rEInJxF5zz1KLSSY7KN0422mvfGNVbUHxgGA46tDElKYov4IlXjPT8akwl3Ts4nydb-LOViVl74dtCK1FZACMwMSx5aZUSw_yzSy-X1lJNVLNMbqSHCcbUkVYu3bpxDX0xsufbygYP0B-gJgK0gJhaLfT2gv82dc8LmDc-7KEUxfdaGK8FHDfzzQWGiACqHCrjP0rCsliHqMDVJSCZnscfYCn9V7eywuWROXFqfpVdxC-uqNH-0fZs"/>
+<img alt="Client 2" class="h-10 w-10 rounded-full border-2 border-white dark:border-gray-800 object-cover" data-alt="Portrait of a man with glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYOfwi9uooblqekcNO8jQLpBH8y4kNECtJqpgDmvNwCJK-xKF4tds9jYIg0ZV3UKcV_q004yaXHfIA1T5CV4_aFlB_-33ZNeOCk5vpqHA5oghEqlJ5OJPPIZAEaqQEdFMn2aubisjgsHTuRly1ECjikd2Z-V1g_HN7vASce0izZoIL96qGXTgd1fjpCgtQ6HedWdZUScnwFyix1esUBHwPNYjyG8CeQRfTFArWBC7V7HGsZeWNUew5QEA46H525-FptQ2T5u11UvI"/>
+<img alt="Client 3" class="h-10 w-10 rounded-full border-2 border-white dark:border-gray-800 object-cover" data-alt="Portrait of a man smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlzYaT8fqdexScPbEQIYmhmCREwgjO1Qe9x0wDcFgcBeIx-4iB4CndIb04l9vqPWTNPQqYd2qVpecJ80mSWJH2zQvig3F3chwZIEwhiF2pz_mhxsr94wHGdtXXf-vG8gEpBX_5tMXOr0DptVGc72NQmhqq0thru9fLWgtMwLL088zBgVPgHTYIaCXeeT9j-e-dmgVefRyvFIBCOV5Qwdzp1sfcRLxaBtN52yW5t92JVFiVR0leTOLcFFQIrzg2A9dkT99MTgyNDAE"/>
+<div class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-white dark:border-gray-800 bg-primary text-xs font-bold text-white">
+                                                            +5k
+                                                        </div>
+</div>
+<div>
+<p class="text-sm font-bold text-text-main-light dark:text-text-main-dark">Personality</p>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-yellow-400 !text-[16px]">star</span>
+<span class="text-xs font-medium text-text-sec-light dark:text-text-sec-dark">4.0/5 Average Rating</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof / Logos -->
+<section class="py-12 bg-surface-light dark:bg-surface-dark border-y border-gray-100 dark:border-gray-800">
+<div class="layout-container flex justify-center">
+<div class="layout-content-container flex w-full max-w-[1280px] flex-col px-4 sm:px-6 lg:px-8">
+<p class="mb-8 text-center text-sm font-semibold uppercase tracking-wider text-text-sec-light dark:text-text-sec-dark opacity-70">
+                            Programming Languages
+                        </p>
+<div class="flex flex-wrap items-center justify-center gap-x-12 gap-y-8 opacity-60 grayscale transition-all hover:grayscale-0 hover:opacity-100">
+<!-- Using text as placeholders for logos to keep it clean, but could be SVGs -->
+<span class="text-2xl font-bold text-text-main-light dark:text-text-main-dark flex items-center gap-2"><span class="material-symbols-outlined">Python</span></span>
+<span class="text-2xl font-bold text-text-main-light dark:text-text-main-dark flex items-center gap-2"><span class="material-symbols-outlined">MySQL</span></span>
+<span class="text-2xl font-bold text-text-main-light dark:text-text-main-dark flex items-center gap-2"><span class="material-symbols-outlined">C#</span></span>
+<span class="text-2xl font-bold text-text-main-light dark:text-text-main-dark flex items-center gap-2"><span class="material-symbols-outlined">Dart</span></span>
+</div>
+</div>
+</div>
+</section>
+
+</section>
+<!-- Social Proof / Logos -->
+<section class="py-12 bg-surface-light dark:bg-surface-dark border-y border-gray-100 dark:border-gray-800">
+<div class="layout-container flex justify-center">
+<div class="layout-content-container flex w-full max-w-[1280px] flex-col px-4 sm:px-6 lg:px-8">
+<p class="mb-8 text-center text-sm font-semibold uppercase tracking-wider text-text-sec-light dark:text-text-sec-dark opacity-70">
+                            Programming Tools
+                        </p>
+<div class="flex flex-wrap items-center justify-center gap-x-12 gap-y-8 opacity-60 grayscale transition-all hover:grayscale-0 hover:opacity-100">
+<!-- Using text as placeholders for logos to keep it clean, but could be SVGs -->
+<span class="text-2xl font-bold text-text-main-light dark:text-text-main-dark flex items-center gap-2"><span class="material-symbols-outlined">VS Code</span></span>
+<span class="text-2xl font-bold text-text-main-light dark:text-text-main-dark flex items-center gap-2"><span class="material-symbols-outlined">XAMPP</span></span>
+<span class="text-2xl font-bold text-text-main-light dark:text-text-main-dark flex items-center gap-2"><span class="material-symbols-outlined">Github</span></span>
+<span class="text-2xl font-bold text-text-main-light dark:text-text-main-dark flex items-center gap-2"><span class="material-symbols-outlined">Figma</span></span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Recent Work / Image Grid -->
+<section class="py-20 md:py-32">
+<div class="layout-container flex justify-center">
+<div class="layout-content-container flex w-full max-w-[1280px] flex-col px-4 sm:px-6 lg:px-8">
+<div class="mb-12 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+<div class="flex flex-col gap-2">
+<h3 class="text-3xl font-bold leading-tight tracking-tight text-text-main-light dark:text-text-main-dark md:text-4xl">
+                                    My Recent Projects
+                                </h3>
+<p class="text-text-sec-light dark:text-text-sec-dark max-w-lg">
+                                    A collection of projects that define my style and expertise in digital product design.
+                                </p>
+</div>
+<a class="group flex items-center gap-2 text-primary font-bold hover:text-orange-600 transition-colors" href="#">
+                                View all projects 
+                                <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+<!-- Project 1 -->
+<div class="group flex flex-col gap-4 cursor-pointer">
+<div class="overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
+<div class="aspect-[4/3] w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Minimalist banking mobile app interface on a dark background" style='background-image: url("/images/RL\ Cosmetics&Perfumes.png");'>
+</div>
+</div>
+<div>
+<h4 class="text-xl font-bold text-text-main-light dark:text-text-main-dark group-hover:text-primary transition-colors">RL Cosmetics & Perfumes Dashboard</h4>
+<p class="text-sm text-text-sec-light dark:text-text-sec-dark mt-1">UX/UI Design • Web App</p>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group flex flex-col gap-4 cursor-pointer">
+<div class="overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
+<div class="aspect-[4/3] w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="E-commerce website layout featuring fashion products" style='background-image: url("/images/JNJV.png");'>
+</div>
+</div>
+<div>
+<h4 class="text-xl font-bold text-text-main-light dark:text-text-main-dark group-hover:text-primary transition-colors">E-commerce Web app</h4>
+<p class="text-sm text-text-sec-light dark:text-text-sec-dark mt-1">Visual Design • Functionality</p>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group flex flex-col gap-4 cursor-pointer">
+<div class="overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
+<div class="aspect-[4/3] w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Medical application interface showing health statistics" style='background-image: url("/images/smart-inventory-dashboard.png");'>
+</div>
+</div>
+<div>
+<h4 class="text-xl font-bold text-text-main-light dark:text-text-main-dark group-hover:text-primary transition-colors">Smart Inventory System</h4>
+<p class="text-sm text-text-sec-light dark:text-text-sec-dark mt-1">Web App • Inventory</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-light dark:bg-surface-dark py-16 border-t border-gray-200 dark:border-gray-800">
+<div class="layout-container flex justify-center">
+<div class="layout-content-container flex w-full max-w-[1280px] flex-col px-4 sm:px-6 lg:px-8 text-center">
+<div class="flex flex-col items-center gap-8">
+<div class="h-16 w-16 flex items-center justify-center rounded-2xl bg-primary/10 text-primary mb-2">
+<span class="material-symbols-outlined !text-[32px]">mail</span>
+</div>
+<h2 class="text-2xl md:text-3xl font-bold text-text-main-light dark:text-text-main-dark max-w-2xl">
+                            Have a project in mind? Let's build something amazing together.
+                        </h2>
+<div class="flex flex-wrap items-center justify-center gap-8 md:gap-12 my-4">
+<a class="text-text-sec-light dark:text-text-sec-dark text-base hover:text-primary dark:hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-text-sec-light dark:text-text-sec-dark text-base hover:text-primary dark:hover:text-primary transition-colors" href="templates/Projects.html">Projects</a>
+<a class="text-text-sec-light dark:text-text-sec-dark text-base hover:text-primary dark:hover:text-primary transition-colors" href="templates/AboutMe.html">About</a>
+<a class="text-text-sec-light dark:text-text-sec-dark text-base hover:text-primary dark:hover:text-primary transition-colors" href="templates/Contact.html">Contact</a>
+</div>
+<div class="flex justify-center gap-6">
+<a class="text-text-sec-light dark:text-text-sec-dark hover:text-primary dark:hover:text-primary transition-colors p-2 bg-background-light dark:bg-background-dark rounded-full" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="text-text-sec-light dark:text-text-sec-dark hover:text-primary dark:hover:text-primary transition-colors p-2 bg-background-light dark:bg-background-dark rounded-full" href="#">
+<span class="material-symbols-outlined">work</span>
+</a>
+<a class="text-text-sec-light dark:text-text-sec-dark hover:text-primary dark:hover:text-primary transition-colors p-2 bg-background-light dark:bg-background-dark rounded-full" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+</div>
+<div class="pt-8 border-t border-gray-200 dark:border-gray-800 w-full max-w-md">
+<p class="text-text-sec-light dark:text-text-sec-dark text-sm">© 2025 Mark Christian Capillan. All rights reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

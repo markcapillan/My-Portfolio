@@ -1,0 +1,38 @@
+/* Tailwind Theme Extension */
+:root {
+  --primary: #f27f0d;
+  --bg-light: #f8f7f5;
+  --bg-dark: #221910;
+  --surface-light: #ffffff;
+  --surface-dark: #2d241b;
+  --text-main-light: #1c140d;
+  --text-main-dark: #ffffff;
+  --text-sec-light: #5c5550;
+  --text-sec-dark: #a09a95;
+}
+
+/* Custom utility mappings */
+.bg-background-light { background-color: var(--bg-light); }
+.bg-background-dark { background-color: var(--bg-dark); }
+.text-text-main-light { color: var(--text-main-light); }
+.text-text-main-dark { color: var(--text-main-dark); }
+.text-text-sec-light { color: var(--text-sec-light); }
+.text-text-sec-dark { color: var(--text-sec-dark); }
+.text-primary { color: var(--primary); }
+
+/* Navigation links */
+.nav-link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-sec-light);
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
