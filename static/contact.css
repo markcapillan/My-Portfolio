@@ -1,0 +1,50 @@
+/* projects.css */
+
+/* Body font */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Material Symbols default style */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+}
+
+/* Project Cards */
+.group:hover .group-hover\:shadow-xl {
+    box-shadow: 0 10px 15px -3px rgba(242, 127, 13, 0.1), 0 4px 6px -2px rgba(242, 127, 13, 0.05);
+}
+
+.group:hover .group-hover\:scale-105 {
+    transform: scale(1.05);
+}
+
+.group:hover .group-hover\:text-primary {
+    color: #f27f0d;
+}
+
+.group:hover .group-hover\:opacity-100 {
+    opacity: 1;
+}
+
+.group:hover .group-hover\:-translate-x-0 {
+    transform: translateX(0);
+}
+
+/* Buttons hover effects */
+button:hover {
+    transition: all 0.3s ease;
+}
+
+/* Footer social hover */
+footer a:hover {
+    background-color: #f27f0d;
+    color: white;
+    border-color: #f27f0d;
+}
+
+/* CTA buttons */
+button:hover, .group:hover button {
+    transition: all 0.3s ease;
+}
